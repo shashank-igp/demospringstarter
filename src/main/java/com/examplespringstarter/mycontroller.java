@@ -17,4 +17,8 @@ public class mycontroller {
     public @ResponseBody double sum (@PathVariable double a, @PathVariable double b){
         return a+b;
     }
+    @RequestMapping(value = "/{a}")
+    public @ResponseBody int mul(@PathVariable int a){
+        return a*100;
+    }
 }
